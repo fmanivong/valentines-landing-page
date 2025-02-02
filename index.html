@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine ❤️</title>
+    <style>
+        body {
+            background-color: #ffe4e1;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #333;
+        }
+        h1 {
+            font-size: 4em;
+            color: red;
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .heart {
+            color: #ff6b6b;
+            font-size: 4em;
+            animation: beat 1s infinite alternate;
+        }
+        @keyframes beat {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); }
+        }
+        .button {
+            background-color: #d6336c;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+        .button:hover {
+            background-color: #a61e4d;
+        }
+        .hearts {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            font-size: 2em;
+            color: #ff6b6b;
+        }
+        .special-font {
+            font-family: 'Georgia', serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts">❤️❤️❤️❤️❤️</div>
+    <h1>Will You Be My Valentine? 💘</h1>
+    <a href="#yes" class="button">YES 💕</a>
+    <a href="#no" class="button">NO 😢</a>
+
+    <div id="yes" style="display:none; margin-top: 50px;">
+        <p class="special-font">I'm the luckiest person in this universe to get the chance to be your valentine. I've loved you in every lifetime and I promise to make this one better than every other. I promise to be your protector, your soulmate, lover, and best friend in every lifetime. Words will never be enough, so I vow to show you each and every day. I love you always, mi amor. ❤️</p>
+    </div>
+
+    <script>
+        document.querySelector('.button[href="#yes"]').addEventListener('click', function() {
+            document.getElementById('yes').style.display = 'block';
+        });
+        document.querySelector('.button[href="#no"]').addEventListener('click', function() {
+            alert('Oh no! Are you sure? 😢');
+        });
+    </script>
+</body>
+</html>
