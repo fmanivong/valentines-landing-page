@@ -6,17 +6,19 @@
     <title>Be My Valentine ❤️</title>
     <style>
         body {
-            background: url('https://www.transparenttextures.com/patterns/hearts.png'), #ffe4e1;
+            background: url('https://www.transparenttextures.com/patterns/hearts.png'), linear-gradient(to bottom right, #ff9a9e, #fecfef);
             background-size: cover;
+            background-attachment: fixed;
             font-family: 'Arial', sans-serif;
             text-align: center;
-            padding: 50px;
+            padding: 0;
+            margin: 0;
             color: #333;
         }
         h1 {
             font-size: 4em;
             color: red;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         p {
             font-size: 1.5em;
@@ -47,36 +49,28 @@
         .button:hover {
             background-color: #a61e4d;
         }
-        .hearts {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            right: 20px;
-            font-size: 2em;
-            color: #ff6b6b;
+        .banner {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 600px;
+            margin: 80px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .special-font {
             font-family: 'Georgia', serif;
             font-style: italic;
         }
-        .banner {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 15px;
-            display: inline-block;
-            margin-top: 50px;
-        }
     </style>
 </head>
 <body>
-    <div class="hearts">❤️❤️❤️❤️❤️</div>
     <div class="banner">
         <h1>Will You Be My Valentine? 💘</h1>
         <a href="#yes" class="button">YES 💕</a>
         <a href="#no" class="button">NO 😢</a>
     </div>
 
-    <div id="yes" style="display:none; margin-top: 50px;">
+    <div id="yes" style="display:none; margin: 50px auto; max-width: 600px; background: rgba(255, 255, 255, 0.85); padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
         <p class="special-font">I'm the luckiest person in this universe to get the chance to be your valentine. I've loved you in every lifetime and I promise to make this one better than every other. I promise to be your protector, your soulmate, lover, and best friend in every lifetime. Words will never be enough, so I vow to show you each and every day. I love you always, mi amor. ❤️</p>
     </div>
 
@@ -89,4 +83,5 @@
         });
     </script>
 </body>
-</html> 
+</html>
+
